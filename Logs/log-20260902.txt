@@ -1,0 +1,82 @@
+2026-09-02 00:20:08.780 +02:00 [FTL] Application failed to start.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Guard.ThrowIfNull[T](T argument, Boolean throwOnEmptyString, String paramName) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/CallerArgumentExpressionAttribute.cs:line 49
+   at Microsoft.Extensions.DependencyInjection.NpgSqlHealthCheckBuilderExtensions.AddNpgSql(IHealthChecksBuilder builder, String connectionString, String healthQuery, Action`1 configure, String name, Nullable`1 failureStatus, IEnumerable`1 tags, Nullable`1 timeout) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.NpgSql/DependencyInjection/NpgSqlHealthCheckBuilderExtensions.cs:line 40
+   at Program.<Main>$(String[] args) in C:\Users\ASUS\Documents\API\BookingAPI\Program.cs:line 41
+2026-09-02 00:20:12.857 +02:00 [FTL] Application failed to start.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Guard.ThrowIfNull[T](T argument, Boolean throwOnEmptyString, String paramName) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/CallerArgumentExpressionAttribute.cs:line 49
+   at Microsoft.Extensions.DependencyInjection.NpgSqlHealthCheckBuilderExtensions.AddNpgSql(IHealthChecksBuilder builder, String connectionString, String healthQuery, Action`1 configure, String name, Nullable`1 failureStatus, IEnumerable`1 tags, Nullable`1 timeout) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.NpgSql/DependencyInjection/NpgSqlHealthCheckBuilderExtensions.cs:line 40
+   at Program.<Main>$(String[] args) in C:\Users\ASUS\Documents\API\BookingAPI\Program.cs:line 41
+[2026-09-02 00:24:01 FTL]  Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\ASUS\Documents\API\BookingAPI\Program.cs:line 146
+[2026-09-02 00:24:08 FTL]  Application failed to start.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\ASUS\Documents\API\BookingAPI\Program.cs:line 146
+[2026-09-02 00:24:42 INF]  Now listening on: http://localhost:5015
+[2026-09-02 00:24:42 INF]  Application started. Press Ctrl+C to shut down.
+[2026-09-02 00:24:42 INF]  Hosting environment: Development
+[2026-09-02 00:24:42 INF]  Content root path: C:\Users\ASUS\Documents\API\BookingAPI
+[2026-09-02 00:24:45 INF]  Request starting HTTP/1.1 GET http://localhost:5015/ - null null
+[2026-09-02 00:24:45 WRN] 50758e61-cf40-49db-aca4-8d7a98cd0b92 Failed to determine the https port for redirect.
+[2026-09-02 00:24:45 INF]  Request finished HTTP/1.1 GET http://localhost:5015/ - 404 0 null 58.266ms
+[2026-09-02 00:24:45 INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5015/, Response status code: 404
+[2026-09-02 00:24:45 INF]  Request starting HTTP/1.1 GET http://localhost:5015/favicon.ico - null null
+[2026-09-02 00:24:45 INF]  Request finished HTTP/1.1 GET http://localhost:5015/favicon.ico - 404 0 null 4.8487ms
+[2026-09-02 00:24:45 INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5015/favicon.ico, Response status code: 404
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger - null null
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger - 301 0 null 2.8691ms
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/index.html - null null
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/index.html - 200 null text/html;charset=utf-8 50.7909ms
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui.css - null null
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/index.css - null null
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui-bundle.js - null null
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui-standalone-preset.js - null null
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/index.js - null null
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/index.js - 200 null application/javascript;charset=utf-8 7.1509ms
+[2026-09-02 00:24:53 INF] f066ce7b-23ab-47be-b38c-2c243d18ff6d Sending file. Request path: '/index.css'. Physical path: 'N/A'
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/index.css - 200 202 text/css 12.5684ms
+[2026-09-02 00:24:53 INF] 8bda351d-a07e-48ed-a548-8ac8007901bf Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2026-09-02 00:24:53 INF] 89cb14eb-cb7c-41e2-9f78-53bc98711f56 Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 22.6124ms
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui.css - 200 152035 text/css 24.8545ms
+[2026-09-02 00:24:53 INF] fd2ec4f2-50b9-482e-8390-5290c7ce8cfb Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/swagger-ui-bundle.js - 200 1426001 text/javascript 37.0679ms
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/favicon-16x16.png - null null
+[2026-09-02 00:24:53 INF] b1a41e05-cbd0-44c9-a343-637721a23935 Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/favicon-16x16.png - 200 665 image/png 3.5083ms
+[2026-09-02 00:24:53 INF]  Request starting HTTP/1.1 GET http://localhost:5015/swagger/v1/swagger.json - null null
+[2026-09-02 00:24:53 INF]  Request finished HTTP/1.1 GET http://localhost:5015/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.1ms
+[2026-09-02 00:27:44 INF]  Request starting HTTP/1.1 POST http://localhost:5015/api/Bookings - application/json 417
+[2026-09-02 00:27:44 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 CORS policy execution successful.
+[2026-09-02 00:27:44 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executing endpoint 'BookingAPI.Controllers.BookingsController.Create (BookingAPI)'
+[2026-09-02 00:27:44 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Route matched with {action = "Create", controller = "Bookings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookingAPI.DTOs.BookingDTO]] Create(BookingAPI.DTOs.CreateBookingDTO) on controller BookingAPI.Controllers.BookingsController (BookingAPI).
+[2026-09-02 00:27:45 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executed DbCommand (57ms) [Parameters=[@p0='?', @p1='?' (DbType = Boolean), @p2='?' (DbType = Date), @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?' (DbType = Time)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Bookings" ("CompanyName", "ContactPermission", "Date", "Email", "FullName", "HelpWith", "Industry", "JobTitle", "Meeting", "ProblemDescription", "SessionGoal", "Time")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
+RETURNING "Id";
+[2026-09-02 00:27:45 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Confirmations" ("BookingId", "FailureReason", "SentAt", "Status")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+[2026-09-02 00:27:49 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executed DbCommand (5ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Confirmations" SET "BookingId" = @p0, "FailureReason" = @p1, "SentAt" = @p2, "Status" = @p3
+WHERE "Id" = @p4;
+[2026-09-02 00:27:49 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executing CreatedAtActionResult, writing value of type 'BookingAPI.DTOs.BookingDTO'.
+[2026-09-02 00:27:50 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executed action BookingAPI.Controllers.BookingsController.Create (BookingAPI) in 5653.9143ms
+[2026-09-02 00:27:50 INF] c3d9c1fa-7591-4c48-9680-3e9a0b5e91e3 Executed endpoint 'BookingAPI.Controllers.BookingsController.Create (BookingAPI)'
+[2026-09-02 00:27:50 INF]  Request finished HTTP/1.1 POST http://localhost:5015/api/Bookings - 201 null application/json; charset=utf-8 5695.7694ms
+[2026-09-02 00:28:40 INF]  Application is shutting down...
