@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Documents\\API\\BookingAPI\\BookingAPI.csproj": {}
+    "D:\\Documents\\Personal Projects\\Delgender Project\\BookingAPI\\BookingAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Documents\\API\\BookingAPI\\BookingAPI.csproj": {
+    "D:\\Documents\\Personal Projects\\Delgender Project\\BookingAPI\\BookingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\API\\BookingAPI\\BookingAPI.csproj",
+        "projectUniqueName": "D:\\Documents\\Personal Projects\\Delgender Project\\BookingAPI\\BookingAPI.csproj",
         "projectName": "BookingAPI",
-        "projectPath": "C:\\Users\\ASUS\\Documents\\API\\BookingAPI\\BookingAPI.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Documents\\API\\BookingAPI\\obj\\",
+        "projectPath": "D:\\Documents\\Personal Projects\\Delgender Project\\BookingAPI\\BookingAPI.csproj",
+        "packagesPath": "C:\\Users\\YinhlaNdlovu\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Personal Projects\\Delgender Project\\BookingAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\YinhlaNdlovu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,6 +84,10 @@
               "target": "Package",
               "version": "[10.0.11, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.23.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
@@ -122,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
