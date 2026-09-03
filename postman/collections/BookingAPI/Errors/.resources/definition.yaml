@@ -1,0 +1,6 @@
+$kind: collection
+description: |-
+  Tests behavior outside normal validation: not-found bookings,  
+  malformed route parameters, and the rate limiter on POST /api/bookings  
+  (policy: 10 requests/minute per IP, returns 429 with problem+json).
+order: 2607783427964927

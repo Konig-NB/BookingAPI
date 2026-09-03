@@ -1,0 +1,51 @@
+$kind: http-request
+url: "{{baseUrl}}/api/bookings"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"fullName\": \"Nhletelo Hlavathi\",\r
+
+    \  \"jobTitle\": \"BackEnd Developer\",\r
+
+    \  \"companyName\": \"Afcontech\",\r
+
+    \  \"email\": \"nhletelobethel17@gmail.com\",\r
+
+    \  \"industry\": \"Tech\",\r
+
+    \  \"helpWith\": \"Marketing & Branding\",\r
+
+    \  \"problemDescription\": \"\",\r
+
+    \  \"sessionGoal\": \"More clients\",\r
+
+    \  \"meeting\": \"InPerson\",\r
+
+    \  \"date\": \"2026-09-04\",\r
+
+    \  \"time\": \"10:00\",\r
+
+    \  \"contactPermission\": true\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 400\", () => {\r
+
+      \    pm.response.to.have.status(400);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Error is on ProblemDescription field\", () => {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.errors).to.have.property(\"ProblemDescription\");\r
+
+      });"
+    language: text/javascript
+order: 6000

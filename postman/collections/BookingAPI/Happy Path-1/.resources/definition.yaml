@@ -1,0 +1,7 @@
+$kind: collection
+name: Happy Path
+description: |-
+  End-to-end happy path: create a booking, retrieve it by id,  
+  list all bookings paginated, and confirm the health endpoint.  
+  Create -> GetById is chained via the bookingId environment variable.
+order: 4390938414678015

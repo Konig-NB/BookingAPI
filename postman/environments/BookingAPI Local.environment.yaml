@@ -1,0 +1,6 @@
+name: BookingAPI Local
+values:
+  - key: baseUrl
+    value: ''
+  - key: bookingId
+    value: ''
