@@ -1,0 +1,53 @@
+$kind: http-request
+url: "{{baseUrl}}/api/bookings"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"fullName\": \"Bethel Hlavathi\",\r
+
+    \  \"jobTitle\": \"FrontEnd Developer\",\r
+
+    \  \"companyName\": \"Afcontech\",\r
+
+    \  \"email\": \"wisanibethel17@gmail.com\",\r
+
+    \  \"industry\": \"Tech\",\r
+
+    \  \"helpWith\": \"Marketing & Branding\",\r
+
+    \  \"problemDescription\": \"Less clients\",\r
+
+    \  \"sessionGoal\": \"More clients\",\r
+
+    \  \"meeting\": \"InPerson\",\r
+
+    \  \"date\": \"2026-09-08\",\r
+
+    \  \"time\": \"13:00\",\r
+
+    \  \"contactPermission\": true\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 429 or 201\", () => {\r
+
+      \    pm.expect([201, 429]).to.include(pm.response.code);\r
+
+      });\r
+
+      \r
+
+      if (pm.response.code === 429) {\r
+
+      \    pm.test(\"Rejection body has correct content type\", () => {\r
+
+      \        pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/problem+json\");\r
+
+      \    });\r
+
+      }"
+    language: text/javascript
+order: 4134347135327708

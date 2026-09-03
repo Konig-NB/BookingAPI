@@ -1,0 +1,6 @@
+$kind: collection
+description: |-
+  Tests every FluentValidation rule in CreateBookingDtoValidator.  
+  Each request breaks exactly one rule and expects 400 with the  
+  error keyed under the correct field name.
+order: 614756339679231

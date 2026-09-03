@@ -1,0 +1,51 @@
+$kind: http-request
+url: "{{baseUrl}}/api/bookings"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"fullName\": \"Nhletelo Hlavathi\",\r
+
+    \  \"jobTitle\": \"BackEnd Developer\",\r
+
+    \  \"companyName\": \"Afcontech\",\r
+
+    \  \"email\": \"nhletelobethel17@gmail.com\",\r
+
+    \  \"industry\": \"Tech\",\r
+
+    \  \"helpWith\": \"Marketing & Branding\",\r
+
+    \  \"problemDescription\": \"Less clients\",\r
+
+    \  \"sessionGoal\": \"More clients\",\r
+
+    \  \"meeting\": \"InPerson\",\r
+
+    \  \"date\": \"2026-09-04\",\r
+
+    \  \"time\": \"17:03\",\r
+
+    \  \"contactPermission\": true\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 400\", () => {\r
+
+      \    pm.response.to.have.status(400);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Error is on Time field\", () => {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.errors).to.have.property(\"Time\");\r
+
+      });"
+    language: text/javascript
+order: 8000

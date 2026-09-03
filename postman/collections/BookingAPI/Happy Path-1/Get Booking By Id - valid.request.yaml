@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{baseUrl}}/api/bookings/{{bookingId}}"
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\", () => {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Returned booking id matches requested id\", () => {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.id).to.equal(parseInt(pm.environment.get(\"bookingId\
+      \")));\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Returned booking has expected fullName\", () => {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.fullName).to.equal(\"Nhletelo Hlavathi\");\r
+
+      });"
+    language: text/javascript
+order: 3000
